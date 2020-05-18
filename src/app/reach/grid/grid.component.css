@@ -1,9 +1,9 @@
 .grid {
     display: grid;
-    grid-template-columns: repeat(25, auto);
-    grid-gap: 3px;
+    grid-template-columns: repeat(30, auto);
+    grid-gap: 10px;
     grid-auto-rows: 1fr;
-    width: 50%;
+    width: 70%;
 }
 
 .grid::before {
@@ -28,21 +28,9 @@
 }
 
 .grey {
-    background-color: #f1f1f1;
+    background-color: #8a8a8a;
 }
 
 .grey:hover {
     background-color: #cccccc;
-}
-
-.orange {
-    background-color: #f79342;
-}
-
-.black {
-    background-color: #1f1f1f;
-}
-
-.blue {
-    background-color: #1676f3;
 }

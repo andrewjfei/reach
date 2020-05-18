@@ -12,17 +12,20 @@ export class OptionsBarComponent implements OnInit {
     {
       'name': 'Start Node',
       'description': 'Initial Node',
-      'code': 'start'
+      'code': 'start',
+      'colour': 'yellow'
     },
     {
       'name': 'Target Node',
       'description': 'End Node',
-      'code': 'target'
+      'code': 'target',
+      'colour': 'orange'
     },
     {
-      'name': 'Wall',
+      'name': 'Wall Node',
       'description': 'Barriers',
-      'code': 'wall'
+      'code': 'wall',
+      'colour': 'blue'
     },
   ]
 

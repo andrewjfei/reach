@@ -1,7 +1,8 @@
 <div class="container">
     <div class="row">
+        <h3 class="options-heading">OPTIONS</h3>
         <ng-container *ngFor="let option of options">
-            <button class="btn" type="button" (click)="handleOptionChange(option.code)">{{option.name}}</button>
+            <button class="btn-default {{option.colour}}" type="button" (click)="handleOptionChange(option.code)">{{option.name.toUpperCase()}}</button>
         </ng-container>
     </div>
 </div>

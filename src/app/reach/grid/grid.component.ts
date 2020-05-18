@@ -23,10 +23,10 @@ export class GridComponent implements OnInit {
       'colour': 'grey'
     },
     'start': {
-      'colour': 'orange'
+      'colour': 'yellow'
     },
     'target': {
-      'colour': 'black'
+      'colour': 'orange'
     },
     'wall': {
       'colour': 'blue'
@@ -34,9 +34,9 @@ export class GridComponent implements OnInit {
   }
 
   constructor() { 
-    for (let i = 0; i < 25; i++) {
+    for (let i = 0; i < 30; i++) {
       let row = [];
-      for (let j = 0; j < 25; j++) {
+      for (let j = 0; j < 15; j++) {
         let node = 'node ' + i + '-' + j;
         this.vertices[node] = this.nodeType['empty'];
         this.edges[node] = [];

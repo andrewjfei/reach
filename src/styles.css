@@ -8,10 +8,13 @@ html {
 }
 
 .btn-default {
-    padding: 1em;
-    width: 100px;
+    padding: 0.8em 0.3em;
+    width: 120px;
     border: none;
     color: #ffffff;
+    font-size: 80%;
+    font-weight: 400;
+    letter-spacing: 0.5px;
 }
 
 .yellow {

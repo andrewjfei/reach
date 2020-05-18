@@ -1,5 +1,21 @@
+.container {
+    margin-top: 3em;
+}
+
+.row {
+    width: 75%;
+    margin-left: 12.5%;
+}
+
 .options-heading {
     display: inline;
     color: #ffffff;
     font-weight: 300;
+    font-size: 90%;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.btn-default {
+    margin-left: 20px;
 }

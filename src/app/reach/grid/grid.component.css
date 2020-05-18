@@ -1,9 +1,14 @@
+.container {
+    text-align: center;
+    margin: 3em 0em;
+}
+
 .grid {
-    display: grid;
+    display: inline-grid;
     grid-template-columns: repeat(30, auto);
     grid-gap: 10px;
     grid-auto-rows: 1fr;
-    width: 70%;
+    width: 75%;
 }
 
 .grid::before {
@@ -33,4 +38,8 @@
 
 .grey:hover {
     background-color: #cccccc;
+}
+
+.btn-container {
+    text-align: center;
 }

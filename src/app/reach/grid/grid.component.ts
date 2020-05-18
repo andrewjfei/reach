@@ -143,7 +143,7 @@ export class GridComponent implements OnInit {
       window.alert('No path from start node to target node.');
     } else {
       pathTo[targetNode].forEach((node: string) => {
-        this.vertices[node] = this.nodeType['start'];
+        this.vertices[node] = this.nodeType['target'];
       });
     }
   }

@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 
 @Component({
   selector: 'app-options-bar',
@@ -6,6 +6,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./options-bar.component.css']
 })
 export class OptionsBarComponent implements OnInit {
+  @Input() selectedNode: string;
   @Output() handleNodeChange: EventEmitter<String> = new EventEmitter();
 
   options: object = [

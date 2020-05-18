@@ -2,7 +2,10 @@
     <div class="row">
         <h3 class="options-heading">OPTIONS</h3>
         <ng-container *ngFor="let option of options">
-            <button class="btn-default {{option.colour}} toggle" type="button" (click)="handleOptionChange(option.code)">{{option.name.toUpperCase()}}</button>
+            <button *ngIf="selectedNode != option.code; else elseBlock" class="btn-default {{option.colour}} toggle" type="button" (click)="handleOptionChange(option.code)">{{option.name.toUpperCase()}}</button>
+            <ng-template #elseBlock>
+                <button class="btn-default {{option.colour}} toggle active" type="button" (click)="handleOptionChange(option.code)">{{option.name.toUpperCase()}}</button>
+              </ng-template>
         </ng-container>
     </div>
 </div>

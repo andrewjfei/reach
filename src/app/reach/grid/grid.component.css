@@ -5,7 +5,7 @@
 
 .grid {
     display: inline-grid;
-    grid-template-columns: repeat(30, auto);
+    grid-template-columns: repeat(34, auto);
     grid-gap: 10px;
     grid-auto-rows: 1fr;
     width: 75%;
@@ -33,7 +33,7 @@
 }
 
 .grey {
-    background-color: #8a8a8a;
+    background-color: #808080;
 }
 
 .grey:hover {
@@ -43,3 +43,21 @@
 .btn-container {
     text-align: center;
 }
+
+.btn-default {
+    width: 200px;
+    font-size: 100%;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border: 3px solid #fa831d;
+    background-color: transparent;
+    color: #fa831d;
+    transition: ease 0.5s;
+}
+
+.btn-default:hover {
+    background-color: #fa831d;
+    color: #ffffff;
+}
+
+

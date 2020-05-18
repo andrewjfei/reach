@@ -34,7 +34,7 @@ export class GridComponent implements OnInit {
   }
 
   constructor() { 
-    for (let i = 0; i < 30; i++) {
+    for (let i = 0; i < 34; i++) {
       let row = [];
       for (let j = 0; j < 18; j++) {
         let node = 'node ' + i + '-' + j;

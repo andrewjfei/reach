@@ -19,3 +19,16 @@
 .btn-default {
     margin-left: 20px;
 }
+
+.toggle {
+    opacity: 0.5;
+    transition: ease 0.5s;
+}
+
+.toggle:hover {
+    opacity: 1.0;
+}
+
+.active {
+    opacity: 1.0;
+}

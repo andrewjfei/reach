@@ -17,6 +17,10 @@ html {
     letter-spacing: 0.5px;
 }
 
+.btn-default:hover {
+    cursor: pointer;
+}
+
 .yellow {
     background-color: #ffb819;
 }

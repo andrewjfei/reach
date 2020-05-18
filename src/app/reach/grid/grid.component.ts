@@ -34,9 +34,9 @@ export class GridComponent implements OnInit {
   }
 
   constructor() { 
-    for (let i = 0; i < 34; i++) {
+    for (let i = 0; i < 18; i++) {
       let row = [];
-      for (let j = 0; j < 18; j++) {
+      for (let j = 0; j < 34; j++) {
         let node = 'node ' + i + '-' + j;
         this.vertices[node] = this.nodeType['empty'];
         this.edges[node] = [];
@@ -47,6 +47,7 @@ export class GridComponent implements OnInit {
   }
 
   ngOnInit() {
+    console.log('rows: ' + this.grid.length + ' cols: ' + this.grid[0].length);
     for (let row = 0; row < this.grid.length; row++) {
       for (let col = 0; col < this.grid[0].length; col++) {
 

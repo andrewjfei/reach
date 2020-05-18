@@ -1,0 +1,8 @@
+<div class="grid">
+    <ng-container *ngFor="let row of grid, let i = index">
+        <ng-container *ngFor="let col of row, let j = index">
+            <div class="grid-node {{this.vertices[this.grid[i][j]].colour}}" id="{{i}}-{{j}}" (mousedown)="toggleChangeNode(true, $event)" (mouseover)="handleItemSelected($event)"></div>
+        </ng-container>
+    </ng-container>
+</div>
+<button class="btn" type="button" (click)="dikjstrasAlgorithim(this.startNode,this.targetNode)">Start</button>

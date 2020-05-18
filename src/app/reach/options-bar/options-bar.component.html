@@ -1,0 +1,7 @@
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let option of options">
+            <button class="btn" type="button" (click)="handleOptionChange(option.code)">{{option.name}}</button>
+        </ng-container>
+    </div>
+</div>

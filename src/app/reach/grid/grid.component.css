@@ -1,0 +1,48 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(25, auto);
+    grid-gap: 3px;
+    grid-auto-rows: 1fr;
+    width: 50%;
+}
+
+.grid::before {
+    content: '';
+    width: 0;
+    padding-bottom: 100%;
+    grid-row: 1 / 1;
+    grid-column: 1 / 1;
+}
+
+.grid-node:first-child {
+    grid-row: 1 / 1;
+    grid-column: 1 / 1;
+}
+
+.grid-node {
+    transition: 0.5s ease;
+}
+
+.grid-node:hover {
+    cursor: pointer;
+}
+
+.grey {
+    background-color: #f1f1f1;
+}
+
+.grey:hover {
+    background-color: #cccccc;
+}
+
+.orange {
+    background-color: #f79342;
+}
+
+.black {
+    background-color: #1f1f1f;
+}
+
+.blue {
+    background-color: #1676f3;
+}

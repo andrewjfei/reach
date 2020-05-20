@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ReachComponent implements OnInit {
 
   selectedNode: String = 'wall';
+  selectedAlgorithm: String = 'Dijkstra\'s Algorithm';
 
   constructor() { }
 

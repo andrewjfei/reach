@@ -158,9 +158,16 @@ export class GridComponent implements OnInit {
         this.vertices[node] = this.nodeType['target'];
       });
     }
+  }
 
-    document.getElementById('cg-btn').classList.remove('hide');
-    document.getElementById('bs-btn').classList.add('hide');
+  toggleDefaultButton() {
+    if ( document.getElementById('cg-btn').classList.contains('hide')) {
+      document.getElementById('cg-btn').classList.remove('hide');
+      document.getElementById('bs-btn').classList.add('hide');  
+    } else {
+      document.getElementById('cg-btn').classList.add('hide');
+      document.getElementById('bs-btn').classList.remove('hide');  
+    }
   }
 
   toggleChangeNode(handleItemSelected: boolean, event: any) {

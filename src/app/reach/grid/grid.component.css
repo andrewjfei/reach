@@ -49,15 +49,32 @@
     font-size: 100%;
     font-weight: 600;
     letter-spacing: 2px;
-    border: 3px solid #fa831d;
     background-color: transparent;
-    color: #fa831d;
     transition: ease 0.5s;
 }
 
-.btn-default:hover {
+.btn-orange {
+    border: 3px solid #fa831d;
+    color: #fa831d;
+}
+
+.btn-orange:hover {
     background-color: #fa831d;
     color: #ffffff;
+}
+
+.btn-white {
+    border: 3px solid #ffffff;
+    color: #ffffff;
+}
+
+.btn-white:hover {
+    background-color: #ffffff;
+    color: #303030;
+}
+
+.hide {
+    display: none;
 }
 
 

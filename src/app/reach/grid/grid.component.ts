@@ -33,7 +33,23 @@ export class GridComponent implements OnInit {
     }
   }
 
-  constructor() { 
+  constructor() {}
+
+  ngOnInit() {
+    this.initialiseGrid();
+  }
+
+  initialiseGrid() {
+    this.grid = [];
+    this.vertices = {};
+    this.edges = {};
+    this.startNode = undefined;
+    this.targetNode = undefined;
+    this.intialiseVertices();
+    this.initialiseEdges();
+  }
+
+  intialiseVertices() {
     for (let i = 0; i < 18; i++) {
       let row = [];
       for (let j = 0; j < 34; j++) {
@@ -46,8 +62,7 @@ export class GridComponent implements OnInit {
     }
   }
 
-  ngOnInit() {
-    console.log('rows: ' + this.grid.length + ' cols: ' + this.grid[0].length);
+  initialiseEdges() {
     for (let row = 0; row < this.grid.length; row++) {
       for (let col = 0; col < this.grid[0].length; col++) {
 
@@ -101,9 +116,6 @@ export class GridComponent implements OnInit {
         }
       }
     }
-
-    console.log(this.vertices);
-    console.log(this.edges);
   }
 
   dikjstrasAlgorithim(startNode: string, targetNode: string) {
@@ -146,6 +158,9 @@ export class GridComponent implements OnInit {
         this.vertices[node] = this.nodeType['target'];
       });
     }
+
+    document.getElementById('cg-btn').classList.remove('hide');
+    document.getElementById('bs-btn').classList.add('hide');
   }
 
   toggleChangeNode(handleItemSelected: boolean, event: any) {

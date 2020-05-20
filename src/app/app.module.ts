@@ -6,6 +6,8 @@ import { GridComponent } from './reach/grid/grid.component';
 import { OptionsBarComponent } from './reach/options-bar/options-bar.component';
 import { ReachComponent } from './reach/reach.component';
 import { HeaderComponent } from './reach/header/header.component';
+import { TitleComponent } from './reach/title/title.component';
+import { IonicModule } from '@ionic/angular';
 
 @NgModule({
   declarations: [
@@ -13,10 +15,12 @@ import { HeaderComponent } from './reach/header/header.component';
     GridComponent,
     OptionsBarComponent,
     ReachComponent,
-    HeaderComponent
+    HeaderComponent,
+    TitleComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    IonicModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
